@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mac 上手包</title>
+<style>
+
+:root{
+  --bg:#f4f5f6;          
+  --card:#ffffff;
+  --line:#dcdee1;
+  --ink:#1b1c1f;         
+  --text:#3c3e42;
+  --text3:#75787e;
+  --ring:#1a5fd0;        
+  --r:14px;              
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#16181b; --card:#1f2225; --line:#33373c;
+    --ink:#f2f3f4; --text:#c6c9cd; --text3:#8d9197;
+    --ring:#7fb0f5;
+  }
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro TC","PingFang TC","Noto Sans TC",sans-serif;
+  font-size:16px;line-height:1.65;
+  -webkit-text-size-adjust:100%;
+  padding:clamp(20px,5vw,56px) clamp(16px,4vw,32px);
+  display:flex;justify-content:center;
+}
+.wrap{width:100%;max-width:760px}
+
+h1{
+  font-size:clamp(1.6rem,4.4vw,2.1rem);
+  line-height:1.25;letter-spacing:-.01em;
+  color:var(--ink);margin:0 0 6px;
+}
+.sub{margin:0 0 24px;max-width:34em;color:var(--text)}
+
+.cards{display:grid;gap:12px}
+@media (min-width:640px){
+  
+  .cards{grid-template-columns:1fr 1fr}
+  .card.lead{grid-column:1 / -1}
+}
+
+.card{
+  display:block;text-decoration:none;color:inherit;
+  background:var(--card);
+  border:1px solid var(--line);
+  border-left:3px solid var(--a);
+  border-radius:var(--r);
+  padding:16px 18px;
+  transition:border-color .18s var(--ease),transform .12s var(--ease),
+             box-shadow .18s var(--ease);
+}
+@media (prefers-color-scheme:dark){ .card{border-left-color:var(--ad)} }
+.card:hover{
+  border-color:var(--a);
+  
+  box-shadow:0 6px 20px rgba(27,28,31,.09);
+}
+@media (prefers-color-scheme:dark){
+  .card:hover{border-color:var(--ad);box-shadow:0 6px 20px rgba(0,0,0,.38)}
+}
+.card:active{transform:translateY(1px)}
+.card:focus-visible{outline:3px solid var(--ring);outline-offset:3px}
+
+.when{
+  display:block;font-size:.8rem;font-weight:700;letter-spacing:.01em;
+  color:var(--a);margin-bottom:8px;
+}
+@media (prefers-color-scheme:dark){ .when{color:var(--ad)} }
+
+.row{display:flex;gap:13px;align-items:flex-start}
+.ic{
+  flex:none;width:38px;height:38px;border-radius:10px;
+  background:var(--s);
+  display:flex;align-items:center;justify-content:center;
+}
+.ic svg{width:21px;height:21px;fill:var(--a)}
+@media (prefers-color-scheme:dark){
+  .ic{background:var(--sd)} .ic svg{fill:var(--ad)}
+}
+.tx{flex:1;min-width:0}
+.ttl{display:block;font-size:1.06rem;font-weight:700;color:var(--ink);line-height:1.35}
+.bd{display:block;margin-top:3px;font-size:.93rem}
+.card.lead .bd{max-width:44em}
+
+.hooks{
+  display:flex;flex-wrap:wrap;gap:6px;
+  margin-top:10px;
+}
+.hooks span{
+  font-size:.79rem;line-height:1.5;
+  padding:2px 9px;border-radius:999px;
+  background:var(--s);color:var(--a);
+  white-space:nowrap;
+}
+@media (prefers-color-scheme:dark){
+  .hooks span{background:var(--sd);color:var(--ad)}
+}
+.meta{
+  display:flex;flex-wrap:wrap;gap:4px 14px;
+  margin-top:10px;font-size:.8rem;color:var(--text3);
+  font-variant-numeric:tabular-nums;
+}
+.go{
+  flex:none;align-self:center;color:var(--text3);
+  font-size:1.35rem;line-height:1;
+}
+.card:hover .go{color:var(--a)}
+@media (prefers-color-scheme:dark){ .card:hover .go{color:var(--ad)} }
+
+.foot{
+  margin-top:24px;padding-top:16px;
+  border-top:1px solid var(--line);
+  font-size:.85rem;color:var(--text3);
+}
+.foot p{margin:0 0 5px}
+.foot p:last-child{margin:0}
+
+@media (prefers-reduced-motion:reduce){
+  .card{transition:none}
+  .card:active{transform:none}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Mac 上手包</h1>
+  <p class="sub">剛拿到 Mac？下面三份看你現在需要哪一種。不用網路，雙擊就能看。</p>
+
+  <div class="cards">
+      <a class="card lead" href="hands-on.html" style="--a:#a8431a;--ad:#f08a52;--s:#fbeae1;--sd:#3a1d10">
+        <span class="when">還沒開始用，想先摸一遍</span>
+        <span class="row">
+          <span class="ic"><svg viewBox="0 0 256 256" aria-hidden="true" focusable="false"><path d="M88,24V16a8,8,0,0,1,16,0v8a8,8,0,0,1-16,0ZM16,104h8a8,8,0,0,0,0-16H16a8,8,0,0,0,0,16ZM124.42,39.16a8,8,0,0,0,10.74-3.58l8-16a8,8,0,0,0-14.31-7.16l-8,16A8,8,0,0,0,124.42,39.16Zm-96,81.69-16,8a8,8,0,0,0,7.16,14.31l16-8a8,8,0,1,0-7.16-14.31ZM219.31,184a16,16,0,0,1,0,22.63l-12.68,12.68a16,16,0,0,1-22.63,0L132.7,168,115,214.09c0,.1-.08.21-.13.32a15.83,15.83,0,0,1-14.6,9.59l-.79,0a15.83,15.83,0,0,1-14.41-11L32.8,52.92A16,16,0,0,1,52.92,32.8L213,85.07a16,16,0,0,1,1.41,29.8l-.32.13L168,132.69ZM208,195.31,156.69,144h0a16,16,0,0,1,4.93-26l.32-.14,45.95-17.64L48,48l52.2,159.86,17.65-46c0-.11.08-.22.13-.33a16,16,0,0,1,11.69-9.34,16.72,16.72,0,0,1,3-.28,16,16,0,0,1,11.3,4.69L195.31,208Z"/></svg></span>
+          <span class="tx">
+            <span class="ttl">Mac 動手玩</span>
+            <span class="bd">畫面裡有一台可以真的點的 Mac。不會弄壞任何東西，跟著做十七件事，手就記住了。</span>
+            <span class="hooks"><span>紅色圓點不是關程式</span><span>右鍵在哪、捲動反了</span><span>找東西不用開始功能表</span></span>
+            <span class="meta"><span>17 件事</span><span>大約十分鐘</span><span>在 Mac 上開最好</span></span>
+          </span>
+          <span class="go" aria-hidden="true">&#8250;</span>
+        </span>
+      </a>
+      <a class="card" href="guide.html" style="--a:#0c6f88;--ad:#63b8cf;--s:#ddeff4;--sd:#0d2a33">
+        <span class="when">剛拿到，想從頭學一遍</span>
+        <span class="row">
+          <span class="ic"><svg viewBox="0 0 256 256" aria-hidden="true" focusable="false"><path d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,176H96a8,8,0,0,1,0-16h64a8,8,0,0,1,0,16Zm0-32H96a8,8,0,0,1,0-16h64a8,8,0,0,1,0,16Zm-8-56V44l44,44Z"/></svg></span>
+          <span class="tx">
+            <span class="ttl">Mac 新手上手教學</span>
+            <span class="bd">從開機到會用，一章一件事，每一章都有圖。</span>
+            <span class="hooks"><span>開機第一次要做的事</span><span>檔案存到哪去了</span><span>備份：最重要的一章</span></span>
+            <span class="meta"><span>12 章</span><span>49 張圖</span><span>可以一章一章看</span></span>
+          </span>
+          <span class="go" aria-hidden="true">&#8250;</span>
+        </span>
+      </a>
+      <a class="card" href="from-windows.html" style="--a:#12703f;--ad:#5cc492;--s:#dcefe4;--sd:#0c2b1b">
+        <span class="when">用過 Windows，某個東西找不到</span>
+        <span class="row">
+          <span class="ic"><svg viewBox="0 0 256 256" aria-hidden="true" focusable="false"><path d="M232.49,215.51,185,168a92.12,92.12,0,1,0-17,17l47.53,47.54a12,12,0,0,0,17-17ZM44,112a68,68,0,1,1,68,68A68.07,68.07,0,0,1,44,112Z"/></svg></span>
+          <span class="tx">
+            <span class="ttl">Windows 換 Mac</span>
+            <span class="bd">同一件事，以前怎麼做、現在怎麼做，並排放在一起。遇到哪件事就翻哪件事。</span>
+            <span class="hooks"><span>沒有 C 槽，檔案在哪</span><span>紅色叉叉不是關程式</span><span>沒有 exe，怎麼裝軟體</span></span>
+            <span class="meta"><span>10 章</span><span>不用從頭讀</span><span>當字典用</span></span>
+          </span>
+          <span class="go" aria-hidden="true">&#8250;</span>
+        </span>
+      </a></div>
+
+  <div class="foot">
+    <p>不用三份都看完。挑現在對你有用的那一個就好，之後想到再回來。</p>
+    <p>三份裡的每個畫面名稱和設定位置，都在 macOS 27 上一項一項對過。</p>
+  </div>
+
+</div>
+</body>
+</html>
