@@ -39,56 +39,56 @@
 :root[data-textsize="xlarge"]{--fs:1.24}
 
 :root{
-  --bg:#fcfcfd;
+  --bg:#ffffff;
   --surface:#ffffff;
-  --surface-2:#e5e7ec;
-  --line:#dcdfe4;
-  --text:#1a1c1f;
+  --surface-2:#ffffff;
+  --line:#d5d5d5;
+  --text:#31343a;
   --text-2:#52565c;
   --text-3:#6a6f76;
   --accent:#12703f;
-  --accent-soft:#d0e9dd;
+  --accent-soft:#d3ebdf;
   --warn:#9a4a12;
   --ring:0 0 0 3px rgba(18,112,63,.38);
 }
 
 :root[data-appearance="dark"]{
-  --bg:#0d0e10;
-  --surface:#1a1c1f;
-  --surface-2:#202226;
-  --line:#2c2f34;
-  --text:#ecedef;
-  --text-2:#a5a9ae;
-  --text-3:#8a8f95;
+  --bg:#060607;
+  --surface:#141416;
+  --surface-2:#0e0e0f;
+  --line:#363636;
+  --text:#c4c7ce;
+  --text-2:#8a8f95;
+  --text-3:#797f85;
   --accent:#5cc492;
-  --accent-soft:#1a2b25;
+  --accent-soft:#15261e;
   --warn:#e9a86f;
   --ring:0 0 0 3px rgba(92,196,146,.38);
 }
 @media (prefers-color-scheme:dark){
   :root[data-appearance="auto"]{
-    --bg:#0d0e10;
-    --surface:#1a1c1f;
-    --surface-2:#202226;
-    --line:#2c2f34;
-    --text:#ecedef;
-    --text-2:#a5a9ae;
-    --text-3:#8a8f95;
+    --bg:#060607;
+    --surface:#141416;
+    --surface-2:#0e0e0f;
+    --line:#363636;
+    --text:#c4c7ce;
+    --text-2:#8a8f95;
+    --text-3:#797f85;
     --accent:#5cc492;
-    --accent-soft:#1a2b25;
+    --accent-soft:#15261e;
     --warn:#e9a86f;
     --ring:0 0 0 3px rgba(92,196,146,.38);
 }
   :root:not([data-appearance]){
-    --bg:#0d0e10;
-    --surface:#1a1c1f;
-    --surface-2:#202226;
-    --line:#2c2f34;
-    --text:#ecedef;
-    --text-2:#a5a9ae;
-    --text-3:#8a8f95;
+    --bg:#060607;
+    --surface:#141416;
+    --surface-2:#0e0e0f;
+    --line:#363636;
+    --text:#c4c7ce;
+    --text-2:#8a8f95;
+    --text-3:#797f85;
     --accent:#5cc492;
-    --accent-soft:#1a2b25;
+    --accent-soft:#15261e;
     --warn:#e9a86f;
     --ring:0 0 0 3px rgba(92,196,146,.38);
 }
@@ -325,10 +325,11 @@ strong{font-weight:620}
 .steps.cols .t{display:block;margin-bottom:var(--s1)}
 .steps.cols .d{display:block;line-height:var(--lh-body)}
 
-.path{display:inline-flex;align-items:center;gap:var(--s2);flex-wrap:wrap;
+.path{display:inline-flex;align-items:center;gap:.4em;flex-wrap:wrap;
   background:var(--surface);border:1px solid var(--line);
-  border-radius:var(--r-sm);padding:var(--s2) var(--s3);
-  font-size:var(--f3);font-weight:600;color:var(--text);margin:0 0 var(--s3)}
+  border-radius:var(--r-sm);padding:2px .5em;
+  font-size:.95em;font-weight:600;color:var(--text);
+  line-height:1.35;margin:1px var(--s1)}
 .path i{color:var(--accent);font-style:normal;font-weight:600}
 
 kbd{display:inline-block;background:var(--surface);border:1px solid var(--line);
@@ -541,16 +542,17 @@ figure.dia.wide{max-width:1040px}
   </div>
   <p class="brand-sub">遇到哪件事，就翻哪件事</p>
   <style>
+
 .pack-back{
   display:inline-flex;align-items:center;gap:5px;
   margin:12px 0 2px;padding:3px 10px 3px 7px;
   border:1px solid currentColor;border-radius:999px;
   font-size:.82em;line-height:1.5;
-  color:currentColor;opacity:.55;
+  color:currentColor;opacity:1;
   text-decoration:none;
   transition:opacity .15s ease;
 }
-.pack-back:hover,.pack-back:focus-visible{opacity:1}
+.pack-back:hover,.pack-back:focus-visible{opacity:.72}
 .pack-back:focus-visible{outline:2px solid currentColor;outline-offset:2px}
 @media (prefers-reduced-motion:reduce){ .pack-back{transition:none} }
 </style><a class="pack-back" href="index.html"><span aria-hidden="true">&#8249;</span>回 Mac 上手包</a>
@@ -597,7 +599,7 @@ figure.dia.wide{max-width:1040px}
 
     <div class="side-foot">
       <p class="side-note">
-        這份檔案不需要網路，雙擊就能看。<br>
+        存起來之後不需要網路也能看。<br>
         內容依 macOS 27.0 實機畫面撰寫。
       </p>
     </div>
