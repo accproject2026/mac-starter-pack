@@ -1,0 +1,24 @@
+{
+  "files": {
+    "from-windows.html": {
+      "sha256": "44336acf2460e85b5d6d557e166d0dd1b63396c80a3498d442a27688f8822b58",
+      "size": 604279
+    },
+    "guide.html": {
+      "sha256": "7f29f4863c9c123ed85a6d81a6503975c8eb602d8c0abf0b090df9dec04962d4",
+      "size": 1013404
+    },
+    "hands-on.html": {
+      "sha256": "f2aff017aca6d2340fad2e99ae18618ea502315f506f7ebf87fd1f8f0f9e5277",
+      "size": 355051
+    },
+    "index.html": {
+      "sha256": "4a2b6c70e3dcf782c3f4e1822b2ab4938b7e9e16f85be2f6f607fea6ce9a1ae0",
+      "size": 8841
+    }
+  },
+  "format": 1,
+  "id": "e701045e4b16ac3d",
+  "minApp": "1.2.0",
+  "published": "2026-10-02T12:51:04Z"
+}
