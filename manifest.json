@@ -13,12 +13,12 @@
       "size": 355051
     },
     "index.html": {
-      "sha256": "55c905141e9ad24686f089c7095df12416ea4d5cb0164aa231919444e73839b6",
-      "size": 8841
+      "sha256": "ea2b353d5c4ac44791b6a11d838260e6df9535c571ed0977e8eb1e6c89435726",
+      "size": 8843
     }
   },
   "format": 1,
-  "id": "c0cb56c2de351678",
+  "id": "c2dea6b595e3a4d2",
   "minApp": "1.2.0",
-  "published": "2026-10-28T08:01:41Z"
+  "published": "2026-10-28T08:07:27Z"
 }
