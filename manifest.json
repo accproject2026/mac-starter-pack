@@ -1,12 +1,12 @@
 {
   "files": {
     "from-windows.html": {
-      "sha256": "40aa70dcc6b76aa631d2e65d99cfe5a994e284fbdd6d6d9d70fb288271fa52cc",
-      "size": 604126
+      "sha256": "82bf4634f6f9e673d8227a01fffe2166d81658b2193c0c6732505f6045b9b7b3",
+      "size": 604370
     },
     "guide.html": {
-      "sha256": "29ad4c265c82b5db4ca264682e39a5cd61d8ce360ef8080f590b2106a6f15ba9",
-      "size": 1013403
+      "sha256": "d370273b644b5ace19019f531eb63efc2f476434631e2e59b2b21d60fdf00133",
+      "size": 1013690
     },
     "index.html": {
       "sha256": "4c0b7a441440560dcc6605b0d8c789d837b54b8c3761471762c68979536f4b6a",
@@ -14,7 +14,7 @@
     }
   },
   "format": 1,
-  "id": "b98aebc80d62e9a9",
+  "id": "f2ad2aec043ca32f",
   "minApp": "1.2.0",
-  "published": "2026-10-30T09:57:30Z"
+  "published": "2026-10-30T10:08:22Z"
 }
