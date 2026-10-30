@@ -5,16 +5,16 @@
       "size": 604370
     },
     "guide.html": {
-      "sha256": "d370273b644b5ace19019f531eb63efc2f476434631e2e59b2b21d60fdf00133",
-      "size": 1013690
+      "sha256": "32338569e901f3be0728cf7bc3a07194d30a7f2a42f35f6e348b1eed690da706",
+      "size": 1013684
     },
     "index.html": {
-      "sha256": "4c0b7a441440560dcc6605b0d8c789d837b54b8c3761471762c68979536f4b6a",
+      "sha256": "18cbb8fc9d06a25321f1954f170eb8fb0a0906badd3a8713b8fe64860d0e6a7d",
       "size": 7886
     }
   },
   "format": 1,
-  "id": "f2ad2aec043ca32f",
+  "id": "409d92c88a59c71b",
   "minApp": "1.2.0",
-  "published": "2026-10-30T10:08:22Z"
+  "published": "2026-10-30T10:16:30Z"
 }
