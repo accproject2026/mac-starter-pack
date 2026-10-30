@@ -1,24 +1,20 @@
 {
   "files": {
     "from-windows.html": {
-      "sha256": "44336acf2460e85b5d6d557e166d0dd1b63396c80a3498d442a27688f8822b58",
-      "size": 604279
+      "sha256": "40aa70dcc6b76aa631d2e65d99cfe5a994e284fbdd6d6d9d70fb288271fa52cc",
+      "size": 604126
     },
     "guide.html": {
-      "sha256": "7f29f4863c9c123ed85a6d81a6503975c8eb602d8c0abf0b090df9dec04962d4",
-      "size": 1013404
-    },
-    "hands-on.html": {
-      "sha256": "f2aff017aca6d2340fad2e99ae18618ea502315f506f7ebf87fd1f8f0f9e5277",
-      "size": 355051
+      "sha256": "29ad4c265c82b5db4ca264682e39a5cd61d8ce360ef8080f590b2106a6f15ba9",
+      "size": 1013403
     },
     "index.html": {
-      "sha256": "ea2b353d5c4ac44791b6a11d838260e6df9535c571ed0977e8eb1e6c89435726",
-      "size": 8843
+      "sha256": "4c0b7a441440560dcc6605b0d8c789d837b54b8c3761471762c68979536f4b6a",
+      "size": 7886
     }
   },
   "format": 1,
-  "id": "c2dea6b595e3a4d2",
+  "id": "b98aebc80d62e9a9",
   "minApp": "1.2.0",
-  "published": "2026-10-28T08:07:27Z"
+  "published": "2026-10-30T09:57:30Z"
 }
